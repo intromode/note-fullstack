@@ -6,3 +6,4 @@ export const [
   NEW_NOTE,
   NEW_NOTE_PENDING
 ] = createAction('NEW_NOTE', createNote);
+
