@@ -1,6 +1,6 @@
-import { combineReucers } from 'redux';
+import { combineReducers } from 'redux';
 import notes from './notesReducers';
 
-export default combineReucers({
+export default combineReducers({
   notes
 });

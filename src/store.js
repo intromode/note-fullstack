@@ -3,7 +3,7 @@ import {
   applyMiddleware,
   compose
 } from 'redux';
-import { promiseMIddleware } from 'promise-middleware-redux';
+import { promiseMiddleware } from 'promise-middleware-redux';
 import reducer from './reducers';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -11,6 +11,6 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 export default createStore(
   reducer,
   composeEnhancers(
-    applyMiddleware(promiseMIddleware)
+    applyMiddleware(promiseMiddleware)
   )
 );
